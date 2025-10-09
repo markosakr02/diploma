@@ -7,3 +7,5 @@
 Παραδείγματα από COLMAP σκηνές (μέσα στον φάκελο της καθεμιάς θα βρείτε και τις ρυθμίσεις των K σε txt):
 
 https://drive.google.com/file/d/1eEovKu-5buJgFPhmCdOux_XtXk9zlbKo/view?usp=drive_link
+
+Μικρό λάθος στο κείμενο (σελ. 31): φίλτρο μέσης τιμής -> φίλτρο διαμέσου
