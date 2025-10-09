@@ -36,7 +36,7 @@ def look_at(cam_pos, center):
     true_up = torch.linalg.cross(right, forward)
     true_up /= torch.linalg.norm(true_up)
 
-    return torch.stack([right, true_up, forward], dim=1)
+    return torch.stack([right, true_up, forward], dim=1).T
 
 
 def random_cam_orbit(K, cameras, img_width, img_height, mean, scale, rot, color, alpha, steps=120, fps=30):
@@ -58,3 +58,4 @@ def random_cam_orbit(K, cameras, img_width, img_height, mean, scale, rot, color,
         frames.append((frame*255).numpy().astype(np.uint8))
 
     imageio.mimsave("testset.gif", frames, fps=fps)
+
