@@ -112,7 +112,7 @@ for i in range(1, len(img_names)):
 
     # find R and t wrt the first image
     R2 = R12 @ R1
-    t2 = t1 + R1.T @ t12
+    t2 = R12 @ t1 + t12
     cameras.append([R2, t2])
 
     P1 = K @ np.hstack((R1, t1))
@@ -149,3 +149,4 @@ for i in range(1, len(img_names)):
 #visualize2(np.array(points), np.array(colors))
 
 #gsplat.optimizer(images, K, cameras, np.array(points), np.array(colors))
+
